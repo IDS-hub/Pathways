@@ -1,0 +1,32 @@
+[
+  {
+    "Question": "Pain relievers work by calming irritated nerves.",
+    "CorrectAnswer": false,
+    "Annotation": "Pain relievers don't actually work where your pain is; they work on your brain and interfere with it sending pain signals throughout the body."
+  },
+  {
+    "Question": "A serious burn where all the layers of skin are removed causes more pain than a surface burn or scald.",
+    "CorrectAnswer": false,
+    "Annotation": "A surface burn (first degree) is much more painful than a full thickness burn (third degree). This is because in third degree burns, the nerve cells are damaged or destroyed and don’t produce a pain stimulus as a result, unlike with first degree burns."
+  },
+  {
+    "Question": "Chronic pain means the injury has not healed properly.",
+    "CorrectAnswer": false,
+    "Annotation": "Even once an injury is completely healed, a pain pathway may remain and continue stimulating pain even though there is no need for it."
+  },
+  {
+    "Question": "In chronic pain, the brain becomes more sensitive to danger messages from your muscles and joints.",
+    "CorrectAnswer": true,
+    "Annotation": "The pain system can become over-sensitised. Stress and worry can then further exacerbate symptoms. The key lies in truly understanding pain, letting go of the fear and unresolved stress."
+  },
+  {
+    "Question": "Focused visualization can stop pain taking hold.",
+    "CorrectAnswer": true,
+    "Annotation": "Focused visualization can stop pain taking hold and disrupt the pain habit. Patients often visualise the pain stopping or receding, being pain-free or simply distracting themselves with other positive thoughts. A key to visualization is to build a vivid mental image to focus on that makes you feel good."
+  },
+  {
+    "Question": "Opioid painkillers can make pain worse",
+    "CorrectAnswer": true,
+    "Annotation": "Taking opioids over a long period of time can increase a patient's sensitivity to pain. This happens because long-term use of opiate painkillers causes a decrease in your ability to tolerate pain."
+  }
+]

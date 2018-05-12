@@ -1,0 +1,33 @@
+{
+"list":[
+    {
+        "id":0,
+        "painLevel":3,
+        "name":"sampe1",
+        "duration":15,
+        "sessionDate":"21-12-2018"
+    },
+    {
+        "id":1,
+        "painLevel":5,
+        "name":"sampe2",
+        "duration":120,
+        "sessionDate":"22-12-2018"
+    },
+    {
+        "id":2,
+        "painLevel":9,
+        "name":"sampe3",
+        "duration":10,
+        "sessionDate":"23-12-2018"
+    },
+       {
+        "id":3,
+        "painLevel":10,
+        "name":"sampe5",
+        "duration":19,
+        "sessionDate":"24-12-2018"
+    }
+],
+"success":true
+}

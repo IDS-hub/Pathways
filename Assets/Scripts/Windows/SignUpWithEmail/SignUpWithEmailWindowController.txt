@@ -1,0 +1,85 @@
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Net.Mail;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SignUpWithEmailWindowController : WindowController {
+	[SerializeField] InputField firstNameField;
+	//a
+	[SerializeField] InputField lastNameField;
+	//b
+	[SerializeField] InputField emailField;
+	//c
+	[SerializeField] InputField passwordField;
+
+	[SerializeField] InputField[] inputFields;
+
+	void OnEnable() {
+		InputToggleSwitcher.OnDoneEditing += OnDoneEditing;
+	}
+
+	void OnDisable() {
+		InputToggleSwitcher.OnDoneEditing -= OnDoneEditing;
+	}
+
+	// On clicking on registration
+	public void OnGetSratedFreeButtonClicked() {
+		if (CheckPassword() && CheckEmail()) {
+			Loader.Instane.ShowLoading();
+			apiManager.WebRequestProfileSingUp(firstNameField.text, lastNameField.text, emailField.text, passwordField.text, (value, success) => {
+				if (success) {
+					Popup.Instance.ShowPopup("Attention!", "Please check your mail and validate your registration.", ()=>{
+						OnAlreadyMemberButtonClicked();
+					});
+				} else {
+					string msg = value.GetField("message", ""); 
+					Popup.Instance.ShowPopup("Attention", msg.Length > 0 ? msg : "Some thing is wrong, please try again", null);
+				}
+			});
+		} else {
+			//TODO: Implement error
+		}
+
+	}
+
+	void OnDoneEditing(int i) {
+		if (i >= 0 && i < inputFields.Length) {
+			Debug.Log("done editing " + i);
+			inputFields[i].Select();
+			TouchScreenKeyboard.Open("");
+		}
+	}
+
+	public void OnAlreadyMemberButtonClicked() {
+		stateMachine.MoveToSelected(WindowPanels.LoginWithEmail);
+	}
+
+	bool CheckPassword() {
+		if (passwordField.text.ToCharArray().Length < 6) {
+			Popup.Instance.ShowPopup("Attention", "Password should more than 6 characters", null);
+			return false;
+		} else
+			return true;
+	}
+
+	bool CheckEmail() {
+		try {
+			MailAddress m = new MailAddress(emailField.text);
+			return true;
+		} catch (FormatException) {
+			return false;
+		}
+	}
+
+	public void OnClickBack() {
+		stateMachine.MoveToSelected(WindowPanels.LoginSignUpMainWindow);
+	}
+
+	public void OnClickTermsAndConditions(){
+
+	}
+
+}

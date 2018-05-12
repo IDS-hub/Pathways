@@ -1,0 +1,48 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LoadingScreen : WindowController {
+
+	public override void Start() {
+		base.Start();
+
+		apiManager.GetAllDiagnosis((jsonV, isSuccess) => {
+			if (isSuccess) {
+
+				apiManager.WebRequestProfileShow((value, success) => {
+
+					if (!success)
+						UserInfo.AccessToken = "";
+
+					apiManager.GetAllSession((data, gotSession) => {
+
+						if (UserInfo.UserOriginalDiagnosis != null && UserInfo.UserOriginalDiagnosis.Count > 0)
+							apiManager.AddUserDiagnonis(null);
+
+						if (value.GetField("avatarJsonData", "").Length == 0)
+							stateMachine.MoveToSelected(WindowPanels.IntroductionWelcome);
+						else
+							stateMachine.MoveToSelected(WindowPanels.Home);
+
+						Loader.Instane.RemoveLoading();
+
+					}, APIManager.RESPONSE_SESSION);
+
+					/*if (success) {
+						if (value.GetField("avatarJsonData", "").Length == 0)
+							stateMachine.MoveToSelected(WindowPanels.IntroductionWelcome);
+						else
+							stateMachine.MoveToSelected(WindowPanels.Home);
+
+					} else
+						stateMachine.MoveToSelected(WindowPanels.AddDiagnoses);*/
+
+				}, APIManager.RESPONSE_PROFILE_SHOW);
+			}
+
+		}, APIManager.RESPONSE_DIAGNOSIS);
+
+
+	}
+}

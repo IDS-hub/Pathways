@@ -1,0 +1,2104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1431816825703592}
+  m_IsPrefabParent: 1
+--- !u!1 &1074669326264408
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224885919000551244}
+  - component: {fileID: 222745640064941456}
+  - component: {fileID: 114371234358240658}
+  m_Layer: 5
+  m_Name: Text (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1120403425392318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224483562342983436}
+  - component: {fileID: 222854709008462482}
+  - component: {fileID: 114726994250794088}
+  m_Layer: 5
+  m_Name: Skip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1129800694385300
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224619345623574812}
+  - component: {fileID: 222515505081810476}
+  - component: {fileID: 114459087992450272}
+  m_Layer: 5
+  m_Name: Text (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1134227974961056
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224737854804025394}
+  - component: {fileID: 222381196635734154}
+  - component: {fileID: 114782998777238070}
+  m_Layer: 5
+  m_Name: Text (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1228679411179898
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224175552211371432}
+  - component: {fileID: 222457597992376296}
+  - component: {fileID: 114689270277039578}
+  m_Layer: 5
+  m_Name: Text (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1247258893771692
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224816587605279972}
+  - component: {fileID: 222506148131771038}
+  - component: {fileID: 114914255170885238}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1258661153950600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224106816615257620}
+  - component: {fileID: 114292496569666516}
+  - component: {fileID: 222552946678449932}
+  - component: {fileID: 114842555533030122}
+  - component: {fileID: 114710131079812504}
+  m_Layer: 5
+  m_Name: scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1304313203829360
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224278120363272934}
+  - component: {fileID: 222223752138701002}
+  - component: {fileID: 114691327882880096}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1336747264424374
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224417629361292568}
+  - component: {fileID: 222340772505117940}
+  - component: {fileID: 114029790450864750}
+  m_Layer: 5
+  m_Name: Text (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1431816825703592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224394208550123586}
+  - component: {fileID: 222615525502156294}
+  - component: {fileID: 114244788636381734}
+  - component: {fileID: 114098587798974258}
+  m_Layer: 5
+  m_Name: Terms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1434869483776740
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224206875605177460}
+  - component: {fileID: 222915660245958744}
+  - component: {fileID: 114264862713188086}
+  m_Layer: 5
+  m_Name: Text (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1456826198024266
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224280569668683538}
+  - component: {fileID: 222391286659780626}
+  - component: {fileID: 114514008970126886}
+  m_Layer: 5
+  m_Name: Text (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1460573245134758
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224620608582971910}
+  - component: {fileID: 222718327060052834}
+  - component: {fileID: 114323552192108358}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1510196746042640
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224178454219579304}
+  - component: {fileID: 222195374392325680}
+  - component: {fileID: 114278437252996592}
+  m_Layer: 5
+  m_Name: Text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1540612439207846
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224981015891982760}
+  m_Layer: 5
+  m_Name: viewPort
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1559585182242634
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224719987343305684}
+  - component: {fileID: 222952500312376598}
+  - component: {fileID: 114021642619391224}
+  m_Layer: 5
+  m_Name: Text (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1689550329490920
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224642107741042754}
+  - component: {fileID: 222893399975787092}
+  - component: {fileID: 114365961897717626}
+  m_Layer: 5
+  m_Name: Text (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1757054657500122
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224774174710768706}
+  - component: {fileID: 222099856751844600}
+  - component: {fileID: 114579442848636158}
+  m_Layer: 5
+  m_Name: Text (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1860349428477232
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224183709419562126}
+  - component: {fileID: 222030181231263704}
+  - component: {fileID: 114664510866729330}
+  m_Layer: 5
+  m_Name: Text (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1877914754366506
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224065602696912514}
+  - component: {fileID: 222158530781281582}
+  - component: {fileID: 114097272345513674}
+  m_Layer: 5
+  m_Name: Text (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1918976471440002
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224184741062416398}
+  - component: {fileID: 222673712418809172}
+  - component: {fileID: 114080180254471376}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1952570831742784
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224466785421183912}
+  - component: {fileID: 222179278126144606}
+  - component: {fileID: 114539688634279742}
+  - component: {fileID: 114432751696609150}
+  m_Layer: 5
+  m_Name: content_panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114021642619391224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559585182242634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>1. Applicability of These Terms  </b> \n        \nYour access to, and
+    use of the Services is expressly conditioned on your acceptance of and compliance
+    with these Terms. These Terms apply to all users of the Services, including users
+    who are also contributors of content, information, and other materials or services
+    in the Services. If you do not agree with these Terms, you are not authorized
+    to access or use any portion of the Services in any manner, for any purpose.         \n
+    \       \nYour use of any Services with which we may be affiliated may be subject
+    to additional terms, including terms and conditions provided by a third party.
+    If you do not agree with any of these additional terms and conditions, you are
+    not authorized to use the Services subject to such additional terms.         \n
+    \       \nIn order to receive our Services, you must register as more fully described
+    below in the section entitled \u201CRegistration.\u201D The Services are available
+    only to individuals who are at least 18 years old. You represent and warrant that
+    you have the legal ability (capacity) to enter into a binding contract and are
+    at least 18 years old, and that all registration information you submit is accurate
+    and truthful. \n\nCompany may, in its sole discretion, refuse to offer the Services
+    to any person or entity and change our eligibility criteria at any time for any
+    reason. This provision is void where prohibited by law and the right to access
+    the Services is revoked in such jurisdictions. \n"
+--- !u!114 &114029790450864750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336747264424374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>3. No Medical Advice </b>   \n        \nTHE SERVICES DO NOT INCLUDE
+    THE PROVISION OF MEDICAL CARE BY COMPANY. RATHER, THE SERVICES ENABLE REGISTERED
+    USERS TO ACCESS WEB-BASED EDUCATION AND HEALTH COACHING TOOLS AND RESOURCES, INCLUDING
+    A COACH, WHO MAY PROVIDE YOU WITH LIMITED WEB-, TELEPHONE-, SMS-, OR EMAIL-BASED
+    SUPPORT. COMPANY\u2019S COACHES ARE NOT LICENSED PHYSICIANS OR LICENSED HEALTH
+    CARE PROVIDERS.         \n        \nCOMPANY DOES NOT EMPLOY OR CONTRACT WITH PHYSICIANS
+    TO PROVIDE MEDICAL CARE TO YOU. COMPANY DOES NOT OFFER MEDICAL ADVICE OR DIAGNOSES
+    OR ENGAGE IN THE PRACTICE OF MEDICINE. OUR SERVICES ARE NOT INTENDED TO BE, AND
+    DO NOT CONSTITUTE, A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, DIAGNOSIS, OR
+    TREATMENT AND ARE OFFERED FOR INFORMATIONAL PURPOSES ONLY. \n\nYOU SHOULD NOT
+    CHANGE YOUR TREATMENT OR CARE PLAN, MEDICATION OR THERAPY BASED ON INFORMATION
+    YOU RECEIVED THROUGH THE SERVICES OR FROM ONE OF OUR HEALTH COACHES. CONSULTATION
+    WITH OUR HEALTH COACHES IS SUPPLEMENTAL TO ANY TREATMENT OR CARE PROVIDED BY YOUR
+    HEALTHCARE PROVIDER AND SHOULD NOT REPLACE REGULAR MEDICAL VISITS WITH YOUR HEALTHCARE
+    PROVIDER. \n\nALWAYS SEEK THE ADVICE OF YOUR PHYSICIAN OR OTHER QUALIFIED HEALTH
+    PROVIDER WITH ANY QUESTIONS REGARDING YOUR MEDICAL CONDITION OR THE USE (OR FREQUENCY)
+    OF ANY MEDICATION OR MEDICAL DEVICE. NEVER DISREGARD PROFESSIONAL MEDICAL ADVICE
+    OR DELAY IN SEEKING IT BECAUSE OF SOMETHING YOU HAVE READ IN CONNECTION WITH OUR
+    SERVICES. TO THE EXTENT YOU RECEIVE MEDICAL CARE CONSEQUENT TO THE SERVICES, YOUR
+    TREATING MEDICAL PROFESSIONAL IS RESPONSIBLE FOR OBTAINING YOUR INFORMED CONSENT
+    TO ANY MEDICAL DIAGNOSIS OR TREATMENT, INCLUDING WITHOUT LIMITATION, YOUR CONSENT
+    TO USE TELEMEDICINE IN THE COURSE OF YOUR TREATMENT TO THE EXTENT SUCH CONSENT
+    IS REQUIRED BY APPLICABLE LAW. THIS DIAGNOSIS OR TREATMENT IS SEPARATE FROM AND
+    UNRELATED TO THE SERVICES PROVIDED BY COMPANY.     "
+--- !u!114 &114080180254471376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1918976471440002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "THE SERVICES ARE NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, AND
+    WHILE THE SERVICES PROVIDE INFORMATION AND GENERAL RECOMMENDATIONS, WE CANNOT
+    AND DO NOT DIAGNOSE YOUR HEALTH CONDITIONS. ALWAYS CONSULT A PHYSICIAN OR OTHER
+    QUALIFIED HEALTHCARE PROVIDER FOR PERSONAL MEDICAL ATTENTION AND ADVICE; DON\u2019T
+    USE THE SERVICES AS A SUBSTITUTE FOR CONSULTING WITH YOUR PHYSICIAN OR OTHER HEALTHCARE
+    PROVIDER. \n\nUSE OF THE SERVICES IS NOT FOR MEDICAL EMERGENCIES. IF YOU THINK
+    YOU HAVE A MEDICAL EMERGENCY, CALL THE EMERGENCY SERVICES IN YOUR COUNTRY IMMEDIATELY.\n\nTHE
+    SERVICES DO NOT INCLUDE INFORMATION REGARDING WHICH DRUGS OR TREATMENT THAT MAY
+    BE APPROPRIATE FOR YOU. WE PROVIDE INFORMATION BUT THIS IS NOT A SUBSTITUTE FOR
+    PROFESSIONAL MEDICAL ADVICE. THIS IS MORE FULLY DESCRIBED IN OUR SECTION ENTITLED
+    \u201CNo Medical Advice.\u201D\n"
+--- !u!114 &114097272345513674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877914754366506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>6. Rules and Conduct </b>     \n        \nAs a condition of use, you
+    agree not to use the Services for any purpose that is prohibited by these Terms
+    or by applicable law. The Services (including, without limitation, any Content
+    or User Submissions (both as defined below)) are provided only for your own personal,
+    non-commercial, limited use in accordance with these Terms. You are responsible
+    for all of your activity in connection with the Services. For purposes of these
+    Terms, the term \u201CContent\u201D includes, without limitation, any advertisements,
+    advice, suggestions, videos, audio clips, written forum comments, information,
+    materials, data (obtained about you through the Services or from third parties),
+    text, photographs, images, software, scripts, art, graphics, logos, button icons
+    and interactive features generated, provided, or otherwise made accessible by
+    or to Company or its partners on or through the Services.         \n        \nBy
+    way of example, and not limitation, you shall not, and shall not permit any third
+    party to, directly or indirectly (a) take any action or (b) upload, download,
+    post, submit or otherwise distribute or facilitate distribution of any content
+    on or through the Services, that: infringes any patent, trademark, trade secret,
+    copyright, right of publicity or other right of any other person or entity; is
+    unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive, fraudulent,
+    invasive of another\u2019s privacy, tortious, obscene, offensive, or profane;
+    constitutes unauthorized or unsolicited advertising, junk or bulk e-mail (\u201Cspamming\u201D);
+    involves commercial activities and/or sales without Company\u2019s prior written
+    consent such as contests, sweepstakes, barter, advertising, or pyramid schemes;
+    contains software viruses or any other computer codes, files, or programs that
+    are designed or intended to disrupt, damage, limit or interfere with the proper
+    function of any software, hardware, or telecommunications equipment or to damage
+    or obtain unauthorized access to any system, data, password or other information
+    of Company or any third party; or impersonates any person or entity, including
+    any employee or representative of Company. Additionally, you shall not: (a) take
+    any action that imposes or may impose (as determined by Company in its sole discretion)
+    an unreasonable or disproportionately large load on Company\u2019s (or its third
+    party providers\u2019) infrastructure; (b) interfere or attempt to interfere with
+    the proper working of the Services or any activities conducted on the Services;
+    (c) bypass any measures Company may use to prevent or restrict access to the Services
+    (or other accounts, computer systems or networks connected to the Services); (d)
+    run Maillist, Listserv, any form of auto-responder or \u201Cspam\u201D on the
+    Services; or (e) use manual or automated software, devices, or other processes
+    to \u201Ccrawl\u201D or \u201Cspider\u201D any page of the Services.         \n
+    \       \nYou shall not (directly or indirectly): (a) decipher, decompile, disassemble,
+    reverse engineer or otherwise attempt to derive any source code or underlying
+    ideas or algorithms of any part of the Service, except to the limited extent applicable
+    laws specifically prohibit such restriction; (b) modify, translate, or otherwise
+    create derivative works of any part of the Services; or (c) copy, rent, lease,
+    distribute, or otherwise transfer any or all of the rights that you receive hereunder.
+    You shall abide by all applicable local, state, national and international laws
+    and regulations.         \nCompany reserves the right to remove any Content from
+    the Services at any time, for any reason (including, but not limited to, upon
+    receipt of claims or allegations from third parties or authorities relating to
+    such Content or if Company is concerned that you may have violated these Terms),
+    or for no reason at all.         "
+--- !u!114 &114098587798974258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431816825703592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245e40213867f4b40b136cd40d206b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114244788636381734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431816825703592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8627451}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114264862713188086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434869483776740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>7. Registration</b>  \n        \nAs a condition to using certain aspects
+    of the Services, you will be required to register with Company and select a password
+    and your name (\u201CScreen Name\u201D). You shall provide Company with true,
+    accurate, complete, and current registration information. Failure to do so shall
+    constitute a breach of these Terms, which may result in immediate termination
+    of your Company account. You shall not (a) select or use as a Screen Name a name
+    of another person with the intent to impersonate that person; (b) use as a Screen
+    Name a name subject to any rights of a person other than you without appropriate
+    authorization; or (c) use as a Screen Name a name that is otherwise offensive,
+    vulgar or obscene. Company reserves the right to refuse registration of, or cancel
+    a Screen Name in its sole discretion. You are solely responsible choosing your
+    Screen Name and for activity that occurs on your account. Additionally, you shall
+    be responsible for setting your account password, as well as maintaining its confidentiality.
+    You shall never use another user\u2019s account without such other user\u2019s
+    express permission. You will immediately notify Company in writing of any unauthorized
+    use of your account, or other account related security breach of which you become
+    aware.\n\n<b>8. Communications </b>\n        \nAs a condition of using our Services,
+    you may be required to provide Company with your email address and phone number
+    as part of registration. As part of the Services, you may receive from us email
+    and other communications (e.g., SMS messages and voice calls) relating to your
+    use of our Services. By disclosing this contact information or otherwise sending
+    electronic communications through the Services, you acknowledge and agree that
+    we may send you communications through registered mail, email and other electronic
+    communications, SMS messages, voice calls or otherwise, that we determine, in
+    our sole discretion, are related to your use of our Services. As part of using
+    our Services you agree to receive all agreements, notices, disclosures and other
+    communications that we provide to you in electronic form, and acknowledge that
+    receipt of such documents in electronic form satisfies any legal requirement that
+    such communications be in writing.\n\nWHEN YOU CONTACT US BY EMAIL OR TEXT, WE
+    HAVE NO WAY OF PROTECTING YOUR INFORMATION UNTIL IT REACHES US SINCE EMAIL AND
+    TEXT MESSAGING AND THE COMMUNICATION LINES SUCH COMMUNICATIONS TRAVEL OVER DO
+    NOT HAVE THE SECURITY FEATURES THAT ARE BUILT INTO OUR SERVICES AND MAY NOT BE
+    SECURE. BY SENDING ANY INFORMATION TO US VIA EMAIL OR TEXT, OR AGREEING TO RECEIVE
+    ELECTRONIC COMMUNICATIONS FROM US THROUGH EMAIL OR TEXT, YOU ACKNOWLEDGE AND ACCEPT
+    ANY RISK AND DAMAGE ARISING FROM DISCLOSURE OF SUCH INFORMATION IN THE COURSE
+    OF TRANSMISSION.     "
+--- !u!114 &114278437252996592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510196746042640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "We reserve the right, at our discretion, to modify, replace, update or
+    change any of these Terms or change, suspend, or discontinue the Services (including
+    without limitation, the availability of any feature, database, or content) at
+    any time and for any reason. Company shall not be liable to you for any such modification,
+    replacement, suspension or discontinuation of your rights to access and use the
+    Services. However, if we make any material changes to these Terms, we will notify
+    registered users by e-mail, post a notice on our home page and/or alert you to
+    such changes by other similar means. We may also impose limits on certain features
+    and services or restrict your access to parts or all of the Services without notice
+    or liability. It is your responsibility to check these Terms periodically for
+    changes. By continuing to use the Services, you agree to accept all such revisions.
+    \        \n        \nIf you accept these Terms, but later decide that you want
+    to terminate your account, please contact us at hello@pathwaysrelief.com, and
+    following verification, the Company will complete your request. \n"
+--- !u!114 &114292496569666516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258661153950600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 224466785421183912}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 224981015891982760}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114323552192108358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460573245134758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Close
+--- !u!114 &114365961897717626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689550329490920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>9. Computer Equipment & Internet Services</b>\n        \nWith the exception
+    of the Services, you are responsible for obtaining, installing, maintaining and
+    operating all software, hardware or other equipment (collectively, \u201CSystems\u201D)
+    necessary for you to access and use the Services, as well as Internet services
+    via the Internet service provider of your choice. This responsibility includes,
+    without limitation, your utilizing current versions of web-browsers and appropriate
+    encryption, antivirus, anti-spyware, and Internet security software. You acknowledge
+    that there are certain security, corruption, transmission error, and access availability
+    risks associated with using open networks such as the Internet, and you hereby
+    expressly assume such risks. You acknowledge that you are responsible for the
+    data security of the Systems used to access the Services and for the transmission
+    and receipt of information using such Systems. You acknowledge that you have requested
+    access to the Service for your convenience, have made your own independent assessment
+    of the adequacy of the Internet and Systems, and that you are satisfied with that
+    assessment. We are not responsible for any errors or problems that arise from
+    the malfunction or failure of the Internet or the Systems.         \n        \n<b>10.
+    Fees and Refunds </b>    \n        \nCompany reserves the right to require payment
+    of fees for certain features of the Services. Should you decide to subscribe to
+    such features, you shall pay all applicable fees, as described in connection with
+    such features. Company reserves the right to change its price list and to institute
+    new charges at any time, upon prior notice to you, which may be sent by email
+    or posted on the Services. Use of the Services by you following such notification
+    constitutes your acceptance of any new or increased charges. Subscriptions are
+    automatically renewed and there are no cancellation fees. You may cancel at any
+    time.\n\nIf you are not satisfied with our services, if you let us know within
+    30 days of payment, we will refund the amount paid for the Services. You will
+    need to request the refund via either the Apple AppStore or Google Play user interfaces.
+    We will, upon request, provide detailed information on how to submit your refund
+    request through the relevant store.\n"
+--- !u!114 &114371234358240658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074669326264408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>15. Warranty Disclaimer </b>   \n        \nCompany has no special relationship
+    with or fiduciary duty to you. THE SERVICES (INCLUDING, WITHOUT LIMITATION, ANY
+    CONTENT) ARE PROVIDED \u201CAS IS\u201D AND \u201CAS AVAILABLE\u201D AND ARE WITHOUT
+    WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+    PURPOSE, AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR USAGE OF TRADE,
+    ALL OF WHICH ARE EXPRESSLY DISCLAIMED. COMPANY, AND ITS DIRECTORS, EMPLOYEES,
+    AGENTS, SUPPLIERS, PARTNERS AND CONTENT PROVIDERS DO NOT WARRANT THAT: (A) THE
+    SERVICES WILL BE SECURE OR AVAILABLE AT ANY PARTICULAR TIME OR LOCATION; (B) ANY
+    DEFECTS OR ERRORS WILL BE CORRECTED; (C) ANY CONTENT OR SOFTWARE AVAILABLE AT
+    OR THROUGH THE SERVICES IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (D)
+    THE RESULTS OF USING THE SERVICES WILL MEET YOUR REQUIREMENTS OR THE STATED PURPOSE.
+    YOUR USE OF THE SERVICES IS SOLELY AT YOUR OWN RISK.         \n            \n<b>16.
+    Indemnification </b>   \n        \nYou shall defend, indemnify, and hold harmless
+    Company, its affiliates and each of its, and its affiliates employees, contractors,
+    directors, suppliers and representatives from all liabilities, claims, and expenses,
+    including reasonable attorneys\u2019 fees, that arise from or relate to: (a) your
+    use or misuse of, or access to, the Services, Content or otherwise from your User
+    Submissions; (b) your breach of these Terms; (c) your violation or alleged violation
+    of any applicable Federal, State or local laws, rules and/or regulations; or (d)
+    infringement by you, or any third party using your account, of any intellectual
+    property or other right of any person or entity. Company reserves the right to
+    assume the exclusive defense and control of any matter otherwise subject to indemnification
+    by you, in which event you will assist and cooperate with Company in asserting
+    any available defenses.         \n        \n<b>17. Limitation of Liability </b>
+    \     \n        \nIN NO EVENT SHALL COMPANY, NOR ITS DIRECTORS, EMPLOYEES, AGENTS,
+    PARTNERS, SUPPLIERS OR CONTENT PROVIDERS, BE LIABLE UNDER CONTRACT, TORT, STRICT
+    LIABILITY, NEGLIGENCE OR ANY OTHER LEGAL OR EQUITABLE THEORY WITH RESPECT TO THE
+    SERVICES (INCLUDING, WITHOUT LIMITATION, ANY CONTENT): (A) FOR ANY LOST PROFITS,
+    DATA LOSS, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR SPECIAL, INDIRECT,
+    INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER,
+    SUBSTITUTE GOODS OR SERVICES (HOWEVER ARISING); (B) FOR ANY BUGS, VIRUSES, TROJAN
+    HORSES, OR THE LIKE (REGARDLESS OF THE SOURCE OF ORIGINATION); (C) FOR YOUR RELIANCE
+    ON THE SERVICES; OR (D) FOR ANY DIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES.         \n
+    \       \nNOTHING HEREIN SHALL LIMIT THE POTENTIAL PROFESSIONAL LIABILITY OF A
+    PHYSICIAN OR OTHER LICENSED HEALTH CARE PROVIDER ARISING FROM OR RELATED TO MEDICAL
+    SERVICES YOU MAY RECEIVE CONSEQUENT TO THE USE OF THE SERVICES. WE ARE NOT LIABLE
+    TO ANY PERSON OR USER FOR ANY HARM CAUSED BY THE NEGLIGENCE OR MISCONDUCT OF ANY
+    LICENSED MEDICAL PROFESSIONAL OR ANY OTHER PARTY.         \n        \nWhen using
+    the Services, information will be transmitted over a medium which may be beyond
+    the control and jurisdiction of Company, its customers and/or its vendors. Accordingly,
+    Company assumes no liability for or relating to the delay, unintended disclosure,
+    failure, interruption or corruption of any data or other information transmitted
+    in connection with use of the Services.      \n           \n<b>18. Integration
+    and Severability </b>     \n        \nThese Terms, the Privacy Policy, and any
+    agreement referenced herein, constitute the entire agreement between you and Company
+    with respect to the Services, and supersede all prior or contemporaneous communications
+    and proposals (whether oral, written or electronic) between you and Company with
+    respect to the Services . If any provision of these Terms is found to be unenforceable
+    or invalid, that provision will be limited or eliminated to the minimum extent
+    necessary so that these Terms will otherwise remain in full force and effect and
+    enforceable. The failure of either party to exercise in any respect any right
+    provided for herein shall not be deemed a waiver of any further rights hereunder.
+    \        "
+--- !u!114 &114432751696609150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952570831742784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &114459087992450272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129800694385300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>2. Our Services </b>\n        \nOur Services are designed to assist
+    people in achieving their health goals through education, healthy lifestyle choices,
+    and positive changes in behavior. You should consult with your health care provider/professional
+    before commencing the Services. \n\nBy engaging in our services, you acknowledge
+    that you are in good enough health to begin these Services. The Services require
+    your active engagement and participation. You understand that, despite your efforts,
+    individual users results will vary for a variety of reasons and Company cannot
+    guarantee that you will achieve your health goals. \n"
+--- !u!114 &114514008970126886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456826198024266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>13. User Submissions </b>    \n        \nThe Services may provide you
+    with the ability to create, upload, submit (through our Services or through third-party
+    websites, software or tools), disclose, distribute or otherwise post (hereafter,
+    \u201Cposting\u201D) content (including personal health information), videos,
+    audio clips, written forum comments, data, text, photographs, software, scripts,
+    graphics, works of authorship or other information related to the Services, including
+    without limitation any feedback or suggestions for improvements, enhancements,
+    or error corrections (collectively, \u201CUser Submissions\u201D). You represent
+    and warrant to us that you have the legal right to post such User Submissions
+    and that doing so will not violate any law or infringe upon or violate the rights
+    of any person or entity.         \nBy posting User Submissions on or at any of
+    the Services, including without limitation any individually identifiable health
+    or personal information you submit to us, you hereby irrevocably and unconditionally
+    assign to us all right, title, and interest in and to any such User Submissions
+    (including, without limitation, any modifications, reproductions, or derivative
+    works thereof), and all User Submissions, you supply to us through the Services
+    shall be deemed and shall remain our property, subject to Company\u2019s compliance
+    with the current Privacy Policy and applicable privacy laws. You further understand
+    and agree that Company has the right to create, use, and disclose such User Submissions
+    in accordance with applicable law.        \n        \nYou understand that Company
+    shall have the right to de-identify, reformat, excerpt, or translate any materials,
+    content or information submitted by you; and that all information publicly posted
+    or privately transmitted through the Services is the sole responsibility of the
+    person from which such content originated and that Company will not be liable
+    for any errors or omissions in any content; and that Company cannot guarantee
+    the identity of any other users with whom you may interact in the course of using
+    the Services.         \n        \nCompany does not endorse and has no control
+    over any User Submissions. Company cannot guarantee the authenticity of any data
+    which users may provide about themselves.         \n        \nCompany has no obligation
+    to monitor the Services, Content, or User Submissions. Company may remove any
+    User Submission at any time for any reason (including, but not limited to, upon
+    receipt of claims or allegations from third parties or authorities relating to
+    such User Submission or in order to comply with applicable laws), or for no reason
+    at all. You understand that Company shall have the right, but not the obligation,
+    to record or monitor for quality assurance and training purposes all telephonic,
+    e-mail and other forms of communication. By accepting these Terms, you consent
+    to any such recording or saving.         \n        \n<b>14. Termination   </b>
+    \  \n        \nCompany may terminate your access to all or any part of the Services
+    at any time, with or without cause, with or without notice, effective immediately,
+    which may result in the forfeiture and destruction of all information associated
+    with your account. Upon termination of your right to use our Services or our termination
+    of the Services, all licenses and other rights granted to you by these Terms will
+    immediately terminate.         \n        \nIf you wish to terminate your account,
+    you may do so by following the instructions on the Services. Any fees paid hereunder
+    are non-refundable. All provisions of these Terms which by their nature should
+    survive termination shall survive termination, including, without limitation,
+    ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+    \        "
+--- !u!114 &114539688634279742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952570831742784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 60
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+--- !u!114 &114579442848636158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1757054657500122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>11. Third-Party Sites and Materials</b>  \n        \nThe Services may
+    allow you to display, use, include or make available content, data, information,
+    applications or materials from third parties (\u201CThird Party Materials\u201D)
+    or provide links to certain third party websites (\u201CThird Party Websites\u201D).
+    \        \n        \nWhen you allow the use of any Third Party Materials or access
+    any Third Party Websites, you do so at your own risk, and you understand and agree
+    that you are solely responsible for reading and understanding any terms of use
+    and/or privacy policies that apply to such Third Party Materials or Third Party
+    Websites. These Third Party Materials and Third Party Websites are not under Company\u2019s
+    control, and Company is not responsible or liable for the availability, reliability,
+    content, functions, accuracy, legality, appropriateness, services, materials or
+    any other aspect of such Third Party Materials or found through the use of any
+    Third Party Websites that link to or from the Services or are otherwise referenced
+    in the Services. Company is providing these Third Party Materials and links to
+    Third Party Websites for your convenience, and you understand that Company does
+    not have control over the content and performance of any Third Party Websites
+    and Company is not responsible for the content and/or performance of any such
+    Third Party Websites. The inclusion of any such Third Party Materials or links
+    in the Services does not imply endorsement by Company or any association with
+    the third party website\u2019s operators. Company also does not accept any responsibility
+    for technical failures or for unauthorized access of user transmissions by any
+    third parties.         \n        \nThe providers of Third Party Materials and
+    Third Party Websites (each, a \u201CThird Party Service Provider\u201D) may collect
+    and use certain information about you, as specified in their privacy policies
+    and terms of use. Prior to using or providing any information to any Third Party
+    Service Provider, you should review their privacy policy and terms of use. If
+    you do not understand or do not agree to the terms of a Third Party Service Provider\u2019s
+    privacy policy and/or terms of use, you should not use the related third party
+    services.         \n        \nCOMPANY HEREBY DISCLAIMS ALL RESPONSIBILITY AND
+    LIABILITY FOR ANY OF YOUR INFORMATION COLLECTED OR USED BY ANY THIRD PARTY SERVICE
+    PROVIDER. IN ADDITION, YOU AGREE THAT COMPANY WILL HAVE NO RESPONSIBILITY OR LIABILITY
+    FOR ANY INFORMATION, SOFTWARE, MATERIALS OR SERVICES PROVIDED BY ANY THIRD PARTIES,
+    INCLUDING WITHOUT LIMITATION ANY THIRD PARTY SERVICE PROVIDERS LINKED THROUGH
+    THE SERVICES, AND YOU AGREE TO ASSUME ALL RESPONSIBILITY AND LIABILITY FOR ANY
+    DAMAGES, LOSS, OR OTHER HARM, WHETHER TO YOU OR TO THIRD PARTIES, RESULTING FROM
+    OR ALLEGED TO HAVE RESULTED FROM YOUR USE OF THIRD PARTY MATERIALS AND THIRD PARTY
+    WEBSITES.         \n        \n<b>12. Intellectual Property </b>        \n        \nThe
+    Services and the Content are protected under international intellectual property,
+    copyright, trademark, patent, trade secret and other laws. The Services and the
+    Content are the sole property of Company. You shall abide by all copyright notices,
+    information, and restrictions contained in any Content accessed through the Services.
+    You shall not sell, license, rent, modify, distribute, copy, reproduce, transmit,
+    publicly display, publicly perform, publish, adapt, edit, create derivative works
+    from, or otherwise exploit the Services or any Content or third party submissions
+    or other proprietary rights not owned by you, (a) without the consent of the respective
+    owners or other valid right, and (b) in any way that violates any third party
+    right.         \nYou may, to the extent the Services expressly authorize you to
+    do so, download or copy the Content, and other items displayed on the Services
+    for download, for personal use only in accordance with these Terms, provided that
+    you maintain all copyright, trademark and other notices contained in such Content.
+    You shall not store any significant portion of any Content in any form. Copying
+    or storing of any Content for other than personal, noncommercial use in accordance
+    with these Terms is expressly prohibited without prior written permission from
+    Company, or from the copyright holder identified in such Content\u2019s copyright
+    notice. You acknowledge that all Content accessed by you using the Services is
+    at your own risk and you will be solely responsible for any damage or loss to
+    any party resulting therefrom. Under no circumstances will Company be liable in
+    any way for any Content, including, but not limited to, any errors or omissions
+    in any Content, or any loss or damage of any kind incurred in connection with
+    use of or exposure to any Content posted, emailed, accessed, transmitted or otherwise
+    made available via the Services.         \n        \nSubject to your compliance
+    with these Terms, as revised (and any other terms governing your use of the Services)
+    you are granted a personal, non-exclusive, non-transferable, non-sublicenseable,
+    revocable, limited right to enter our Site and use the Services. All rights in
+    and to the Services not expressly granted in these Terms are hereby reserved and
+    retained by Company.         \n        \nPathways, Pathways Pain Relief, and the
+    Pathways logo (the \u201CCompany Marks\u201D) are trademarks or registered trademarks
+    of Pathways Pain Relief. Other trademarks, service marks, graphics and logos appearing
+    on the Services may be the property of third parties (the \u201CThird Party Marks\u201D).
+    Neither your use of the Services nor these Terms grant you any right, title or
+    interest in or to, or any license to reproduce or otherwise use, the Company Marks
+    or any Third Party Marks.         "
+--- !u!114 &114664510866729330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860349428477232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>5. Privacy and Your Personal Information</b>      \n        \nCompany\u2019s
+    Privacy Policy is expressly incorporated into these Terms. The Privacy Policy
+    discloses Company\u2019s practices regarding the collection, use and disclosure
+    of your personal information. By agreeing to these Terms, you are also agreeing
+    to the terms of Company\u2019s Privacy Policy and consenting to the use and disclosure
+    of information provided to Company as set forth herein. For inquiries in regard
+    to the Privacy Policy, or to report a privacy-related problem, please contact
+    hello@pathwaysrelief.com.         \n        \nThe Services may include the ability
+    to connect with a small social network of people diagnosed with or prescreened
+    for certain medical conditions, including migraines, back pain, neck pain, fibromyalgia,
+    or other chronic pain conditions. BY VISITING OR USING THE SERVICES, YOU CONSENT
+    TO OUR COLLECTION, USE AND DISCLOSURE OF YOUR PERSONAL INFORMATION, INCLUDING
+    HEALTH-RELATED INFORMATION SUCH AS YOUR MEDICAL CONDITIONS, IN ACCORDANCE WITH
+    OUR PRIVACY POLICY. IF YOU DO NOT CONSENT TO THE DISCLOSURE OF THIS INFORMATION,
+    YOU SHOULD NOT ACCESS OR USE THE SERVICES.         \n        \nBy posting, creating,
+    using, and disclosing data, including your individually identifiable health information
+    through User Submissions (as defined below) on or at any of our Services, you
+    hereby irrevocably and unconditionally acknowledge that all such data is owned
+    by Company, subject to Company\u2019s compliance with the current Privacy Policy
+    and applicable law.\n"
+--- !u!114 &114689270277039578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228679411179898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>19. Miscellaneous </b>    \n        \nCompany shall not be liable for
+    any failure to perform its obligations hereunder where such failure results from
+    any cause beyond Company\u2019s reasonable control, including, without limitation,
+    mechanical, electronic or communications failure or degradation (including \u201Cline-noise\u201D
+    interference). These Terms are personal to you, and are not assignable, transferable
+    or sublicensable by you except with Company\u2019s prior written consent. Company
+    may assign, transfer or delegate any of its rights and obligations hereunder without
+    consent. Our licensors may be entitled to enforce these Terms as third-party beneficiaries.
+    There are no other third-party beneficiaries to these Terms except, if applicable,
+    a party to an applicable benefit agreement. No agency, partnership, joint venture,
+    or employment relationship is created as a result of these Terms and neither party
+    has any authority of any kind to bind the other in any respect. In any action
+    or proceeding to enforce rights under these Terms, the prevailing party will be
+    entitled to recover costs and attorneys\u2019 fees. All notices under these Terms
+    will be in writing and will be deemed to have been duly given when received, if
+    personally delivered or sent by certified or registered mail, return receipt requested;
+    when receipt is electronically confirmed, if transmitted by facsimile or e-mail;
+    or the day after it is sent, if sent for next day delivery by recognized overnight
+    delivery service.         \n        \n\nEffective Date: April 27, 2018     "
+--- !u!114 &114691327882880096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304313203829360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 97d0d72adaa5b47c39d2936ca1eb5bea, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114710131079812504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258661153950600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &114726994250794088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120403425392318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114098587798974258}
+        m_MethodName: OnClose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114782998777238070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134227974961056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<b>4. No Emergency Services</b>   \n        \nTHE SERVICES ARE FOR NON-EMERGENCY
+    PURPOSES ONLY. DO NOT ATTEMPT TO ACCESS EMERGENCY CARE THROUGH THE SERVICES. IF
+    AT ANY TIME YOU ARE CONCERNED ABOUT YOUR CARE OR TREATMENT, OR IF YOU THINK YOU
+    HAVE A MEDICAL EMERGENCY, CALL THE EMERGENCY SERVICES IN YOUR COUNTRY OR GO TO
+    THE NEAREST OPEN EMERGENCY ROOM.         \n        \nTHE SERVICES ARE NOT INTENDED
+    TO SUPPORT OR CARRY EMERGENCY OR TIME-CRITICAL CALLS OR COMMUNICATIONS TO ANY
+    TYPE OF HOSPITAL, LAW ENFORCEMENT AGENCY, MEDICAL CARE UNIT, OR ANY OTHER KIND
+    OF EMERGENCY OR TIME-CRITICAL SERVICE.         \n        \nIf Company becomes
+    aware of or contemplates an emergency, Company may, at its sole discretion, secure
+    from any licensed hospital, physician, and/or medical personnel (\u201CEmergency
+    Responders\u201D) any emergency treatment deemed necessary by Company for your
+    immediate care. You understand and agree that, in the event that Company does
+    take any action with respect to securing Emergency Responders on your behalf,
+    you, not Company, will be solely responsible for payment of any and all medical
+    services rendered in connection with any such treatment.     "
+--- !u!114 &114842555533030122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258661153950600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114914255170885238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247258893771692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8aa7b47077794f046a7d0117437a363e, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Welcome to the website or mobile application of Pathways Pain Relief (\u201CPathways\u201D).
+    The following terms and conditions, together with our Privacy Policy (collectively,
+    these \u201CTerms of Use\u201D), govern your access to and use of Pathways. To
+    make these terms easier to read, the Pathways website and app are collectively
+    called the \u201CServices.\u201D\n\nPlease read the Terms of Use carefully before
+    you start to use the Services. \n\nBY ACCESSING, BROWSING OR USING THE SERVICES
+    (INCLUDING YOUR SUBMISSION OF INFORMATION TO THE WEBSITE), YOU ACKNOWLEDGE THAT
+    YOU HAVE READ, UNDERSTOOD, AND AGREED TO BE BOUND BY THESE TERMS OF USE, INCLUDING
+    THE PRIVACY POLICY (WHICH IS INCORPORATED HEREIN BY REFERENCE), AND TO COMPLY
+    WITH ALL APPLICABLE LAWS AND REGULATIONS. \n\nYou, as a user of the Services,
+    agree that the Terms of Use, combined with your act of using the Services, has
+    the same legal force and effect as a written contract with your written signature
+    and satisfy any laws that require a writing or signature. You further agree that
+    you shall not challenge the validity, enforceability, or admissibility of the
+    Terms of Use on the grounds that it was electronically transmitted or authorized.
+    This agreement is between you, or if you have been authorized to and are helping
+    another person visit our Services, this becomes an a legally binding agreement
+    between both the helper and the person being helped by Pathways (\u201CCompany\u201D,
+    \u201CPlatform\u201D, \u201Cwe\u201D or \u201Cus\u201D).\n"
+--- !u!222 &222030181231263704
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860349428477232}
+--- !u!222 &222099856751844600
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1757054657500122}
+--- !u!222 &222158530781281582
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877914754366506}
+--- !u!222 &222179278126144606
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952570831742784}
+--- !u!222 &222195374392325680
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510196746042640}
+--- !u!222 &222223752138701002
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304313203829360}
+--- !u!222 &222340772505117940
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336747264424374}
+--- !u!222 &222381196635734154
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134227974961056}
+--- !u!222 &222391286659780626
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456826198024266}
+--- !u!222 &222457597992376296
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228679411179898}
+--- !u!222 &222506148131771038
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247258893771692}
+--- !u!222 &222515505081810476
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129800694385300}
+--- !u!222 &222552946678449932
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258661153950600}
+--- !u!222 &222615525502156294
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431816825703592}
+--- !u!222 &222673712418809172
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1918976471440002}
+--- !u!222 &222718327060052834
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460573245134758}
+--- !u!222 &222745640064941456
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074669326264408}
+--- !u!222 &222854709008462482
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120403425392318}
+--- !u!222 &222893399975787092
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689550329490920}
+--- !u!222 &222915660245958744
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434869483776740}
+--- !u!222 &222952500312376598
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559585182242634}
+--- !u!224 &224065602696912514
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877914754366506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224106816615257620
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258661153950600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224981015891982760}
+  m_Father: {fileID: 224394208550123586}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.91727096}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 0, y: -1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224175552211371432
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228679411179898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224178454219579304
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510196746042640}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224183709419562126
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860349428477232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224184741062416398
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1918976471440002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224206875605177460
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434869483776740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224278120363272934
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304313203829360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224483562342983436}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!224 &224280569668683538
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456826198024266}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224394208550123586
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431816825703592}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224483562342983436}
+  - {fileID: 224106816615257620}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224417629361292568
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336747264424374}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224466785421183912
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952570831742784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224816587605279972}
+  - {fileID: 224184741062416398}
+  - {fileID: 224178454219579304}
+  - {fileID: 224719987343305684}
+  - {fileID: 224619345623574812}
+  - {fileID: 224417629361292568}
+  - {fileID: 224737854804025394}
+  - {fileID: 224183709419562126}
+  - {fileID: 224065602696912514}
+  - {fileID: 224206875605177460}
+  - {fileID: 224642107741042754}
+  - {fileID: 224774174710768706}
+  - {fileID: 224280569668683538}
+  - {fileID: 224885919000551244}
+  - {fileID: 224175552211371432}
+  m_Father: {fileID: 224981015891982760}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.091796875}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!224 &224483562342983436
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120403425392318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224278120363272934}
+  - {fileID: 224620608582971910}
+  m_Father: {fileID: 224394208550123586}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -40, y: -40}
+  m_SizeDelta: {x: 201, y: 100}
+  m_Pivot: {x: 1, y: 1}
+--- !u!224 &224619345623574812
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129800694385300}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224620608582971910
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460573245134758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224483562342983436}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224642107741042754
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689550329490920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224719987343305684
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559585182242634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224737854804025394
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134227974961056}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224774174710768706
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1757054657500122}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224816587605279972
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247258893771692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224885919000551244
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074669326264408}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224466785421183912}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224981015891982760
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1540612439207846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224466785421183912}
+  m_Father: {fileID: 224106816615257620}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}

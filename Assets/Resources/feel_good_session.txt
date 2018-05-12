@@ -1,0 +1,47 @@
+[
+    {
+        "session_id":"4",
+        "title":"Remove Fear & Stress When You Feel Pain.",
+        "description":"When pain comes on, think of it objectively and do not let your emotions amplify the pain."
+    },
+    {
+        "session_id":"9",
+        "title":"Diaphragmatic Breathing.",
+        "description":"Belly breathe as often as possible. At a minimum, throughout our exercises and whenever you are in or expecting pain. Enjoy the gush of relaxation that comes with deep breathing."
+    },
+    {
+        "session_id":"11",
+        "title":"You’re No Longer A Victim.",
+        "description":"Believe that you are now in control of your pain - you are the future success story that we will talk about. Make yourself believe that and even draft your pain recovery story ready to send in."
+    },
+    {
+        "session_id":"12",
+        "title":"Relentless Visualization.",
+        "description":"Practice vivid visualizations when you don’t have pain, when you feel pain coming on and even when you are in pain. This will release feel good chemicals in your body, reclaim areas of your brain affected by pain, and so much more. Complement visualizations with affirmations that are right for you."
+    },
+    {
+        "session_id":"13",
+        "title":"Change The Way You Talk About Pain.",
+        "description":"Change the way you respond to questions about your pain. Focus on the fact that you’re overcoming the pain, that you’re going to be better or even decide that others will know you as being better from today."
+    },
+    {
+        "session_id":"14",
+        "title":"Exercise & Movement.",
+        "description":"Slowly increase your exercise and movement, day by day. Literally tell your body that exercise is not doing you any damage. Start moving in the same way you did before the pain."
+    },
+    {
+        "session_id":"19",
+        "title":"Defensive Habits & Posture.",
+        "description":"Stop guarding and over treating the area affected with pain. Carry yourself with confidence. Introduce power poses into your life!"
+    },
+    {
+        "session_id":"26",
+        "title":"Teach Others Pain Science.",
+        "description":"Whenever possible, teach others pain science to help them manage a condition. Helping others will not only make you feel good, but you’ll also gain a deeper understanding of pain management."
+    },
+    {
+        "session_id":"44",
+        "title":"Laugh More!",
+        "description":"I want you to have at least 3 laughing fits a week! Watch a funny video, go to a comedy show or surround yourself with more people that bring you joy."
+    }
+]

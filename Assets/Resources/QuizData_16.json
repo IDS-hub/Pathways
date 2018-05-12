@@ -1,0 +1,32 @@
+[
+  {
+    "Question": "All pain is real.",
+    "CorrectAnswer": true,
+    "Annotation": "All pain is real. All too often, people who suffer from chronic pain are treated as if there pain is made up or greatly exaggerated. In part, this is because there is no test to diagnose chronic pain. Additionally, there is no obvious cause for some people who suffer from chronic pain. All this sometimes makes people who suffer from chronic pain feel as if they have to prove their symptoms are real which can be frustrating. In addition, trying to prove the pain can often make pain worse."
+  },
+  {
+    "Question": "The brain can be trained to ignore pain.",
+    "CorrectAnswer": true,
+    "Annotation": "We can be trained to ignore pain. The brain does not 'feel' pain; it perceives it. Pain catastrophizing occurs when the brain amplifies the pain experience. By the same token, pain can be turned down. The cognitive behavior therapy techniques that we use can help pain patients learn to use their brain power (and concentration skills) to conquer pain. Stress relief exercises are also key to help prevent the brain causing physical pain as a result of stress."
+  },
+  {
+    "Question": "Pain in an area where a limb has been amputated is referred to as invisible pain.",
+    "CorrectAnswer": false,
+    "Annotation": "This pain is actually referred to as phantom pain. The amputation site contains nerve endings that continue to send pain signals to the brain, even though the limb is no longer there. This type of pain is most common soon after surgery, and tends to lessen within 6 months, though some people still experience phantom pain for years. This highlights an important concept that we reiterate through many of our sessions - pain does not equal physical damage."
+  },
+  {
+    "Question": "The theory that pain is important in protecting us is just a myth.",
+    "CorrectAnswer": false,
+    "Annotation": "Pain serves an important role in alerting us that we’ve suffered an injury. This is highlighted by the fact that people with a rare condition leaving them unable to feel pain tend to have a shortened life as they do not react in a normal way to injury. However, chronic pain occurs with no obvious cause and is often not useful."
+  },
+  {
+    "Question": "Pain can be measured objectively.",
+    "CorrectAnswer": false,
+    "Annotation": "Pain is a very subjective experience. The same injury can trigger a different pain response in different people. It may also create a different response in the same person depending on the time and circumstances. For example, someone who suffers a terrible injury at a time of when the body is releasing adrenalin (such as a soldier in battle or an athlete at a sporting event) may not feel the pain until much later. So although medical professionals may ask people to give their pain on a scale of 1 to 10, people will still give different responses."
+  },
+  {
+    "Question": "64% of people being treated for chronic pain believe they're taking the most appropriate medication.",
+    "CorrectAnswer": true,
+    "Annotation": "It's also true that 5% of people being treated for chronic pain are still suffering pain after a year of treatment, and 50% of people being treated for chronic pain believe that everything is being done to help them according to the Pain Story Survey. However, chronic pain still affects hundreds of millions of people around the world.These statistics demonstrate that a high proportion of people are accepting chronic pain as a permanent part of their lives that can't be changed or challenged, despite the suffering it causes. This highlights the need for us to re-think pain, and use a more comprehensive approach to pain management."
+  }
+]

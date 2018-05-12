@@ -1,0 +1,884 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using JetBrains.Annotations;
+using UnityEngine;
+using UnityEngine.Networking;
+using LitJson;
+
+public class APIManager : MonoBehaviour
+{
+    public event Action OnServerAuthResponce;
+
+    public const string BASE_URL = "https://pathways.devlits.com";
+
+    public const string SIGN_IN = "/api/v1/signs";
+    public const string REGISTRATION = "/api/v1/profile";
+    public const string RESET_PASSWORD = "/api/v1/password/edit?email=";
+    public const string UPDATE_PASSWORD = "/api/v1/password?reset_password_token=";
+
+    public const string PAIN_CAUSES = "/api/v1/pain_causes";
+    public const string PAIN_CAUSES_SESSION = "sessions?session_type=feel_good";
+    public const string PAIN_CAUSES_SESSION_SHOW = "sessions";
+    public const string PAIN_CAUSES_SESSION_QUIZES = "quizes";
+
+    public const string PROFILE_VALIDATION = "/api/v1/profile/validates/";
+    public const string PROFILE_AUTH = "/api/v1/profile/auth_providers";
+
+    public const string SESSION_HISTORY = "/api/v1/profile/session_histories";
+    public const string SESSION_HISTORY_SESSION = "/api/v1/profile/session_histories?session_id=";
+    public const string SESSION_HISTORY_PAIN_CAUSE = "&pain_cause_id=";
+    public const string SESSION_HISTORY_IS_CHART = "&is_chart=true";
+
+
+    private JsonData requestJsonData = new JsonData();
+    private JsonData responseJsonData = new JsonData();
+
+    private int _respondeType = -1;
+
+    #region UserInformation
+
+    public string _accessToken = "token";// "access-token";
+    public string _email = "user@test.com";
+    public string _password = "password";
+    public string _reset_password_token = "";
+
+    public string _first_name = "";
+    public string _last_name = "";
+    public string _login = "";
+
+    //FB
+    public string _provider_name = "";
+    public string _provider_token = "";
+
+    public int _pain_level = -1;
+    public int _pain_cause_id = -1;
+    public int _session_id = -1;
+
+    public static bool isPasswordUpdated = false;
+    public static bool isCredentialsUpdated = false;
+
+    #endregion
+
+
+    public delegate void ResponseDelegate(string responseString, int responseType);
+    public static ResponseDelegate responseDelegate;
+
+
+    public List<Session> sessionHistoryList = new List<Session>();
+    public List<PainCause> painCauseList = new List<PainCause>(); 
+    public List<PainCauseHistory> painCauseHistories = new List<PainCauseHistory>(); 
+    public List<Quize> quizeList = new List<Quize>();
+
+
+    // Use this for initialization
+    void Start()
+    {
+        //responseDelegate += ProcessWebResponse;
+        //WebRequestSessionHistoryAll();
+    }
+
+
+
+    private UnityWebRequest WebRequest(string url, string type, string access_token, bool useToken)
+    {
+        var request = new UnityWebRequest(url, type);
+
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Accept", "application/json");
+
+        if (useToken)
+            request.SetRequestHeader("Access-Token", access_token);
+
+        return request;
+    }
+
+    private IEnumerator ProcessWebRequest(string bodyJsonString, UnityWebRequest request, int respondeType)
+    {
+        Debug.Log("Request: " + bodyJsonString);
+
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(bodyJsonString);
+
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        yield return request.SendWebRequest();
+
+        Debug.Log("Status Code: " + request.responseCode);
+
+        if (string.IsNullOrEmpty(request.error))
+        {
+            responseJsonData = JsonMapper.ToObject(request.downloadHandler.text);
+
+            if (responseDelegate != null)
+                responseDelegate(request.downloadHandler.text, respondeType);
+        }
+		else
+			Debug.Log("ERROR: " + request.error);
+    }
+
+    private void ProcessWebResponse(string responseString, int respondeType)
+    {
+        Debug.Log("Response: " + responseString);
+
+        switch (respondeType)
+        {
+            case 1:
+                WebResponseSignIn(responseString);
+                break;
+            case 2:
+                WebResponseSignOut(responseString);
+                break;
+            case 3:
+                WebResponseProfileSingUp(responseString);
+                break;
+            case 4:
+                WebResponseProfileShow(responseString);
+                break;
+            case 5:
+                WebResponseProfileUpdate(responseString);
+                break;
+            case 6:
+                WebResponsePasswordEdit(responseString);
+                break;
+            case 7:
+                WebResponsePasswordUpdate(responseString);
+                break;
+            case 8:
+                WebResponseProfileValidates(responseString);
+                break;
+            case 9:
+                WebResponseProfileAuthProviders(responseString);
+                break;
+            case 10:
+                WebResponseProfileGetInfo(responseString);
+                break;
+            case 11:
+                WebResponseSessionHistory(responseString);
+                break;
+            case 12:
+                WebResponseSessionCreate(responseString);
+                break;
+            case 13:
+                WebResponseSessionUpdate(responseString);
+                break;
+            case 14:
+                WebResponseUserPainCauseCreate(responseString);
+                break;
+            case 15:
+                WebResponsePainCauseUpdate(responseString);
+                break;
+            case 16:
+                WebResponsePainCauseAll(responseString);
+                break;
+            case 17:
+                WebResponsePainCauseDelete(responseString);
+                break;
+            case 18:
+                WebResponseSessionsIndex(responseString);
+                break;
+            case 19:
+                WebResponseSessionsPainCauseShow(responseString);
+                break;
+            case 20:
+                WebResponseGetQuizesBySession(responseString);
+                break;
+            case 21:
+                WebResponseGetQuizeById(responseString);
+                break;
+            case 22:
+                WebResponseSessionHistoryAll(responseString);
+                break;
+            case 23:
+                WebResponsePainCauseAll(responseString);
+                break;
+        }
+    }
+
+
+    #region RESPONSE
+
+    public void WebResponseSignIn(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        _accessToken = obj["data"][2][0].ToString();
+    }
+
+    public void WebResponseSignOut(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        if (obj["message"] != null)
+        {
+            _accessToken = string.Empty;
+            PlayerPrefs.SetString(Constants.AccessToken, _accessToken);
+        }
+    }
+
+    public void WebResponseProfileSingUp(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        _first_name = obj["first_name"].ToString();
+        _last_name = obj["last_name"].ToString();
+        _email = obj["email"].ToString();
+    }
+
+    public void WebResponseProfileShow(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        _first_name = obj["first_name"].ToString();
+        _last_name = obj["last_name"].ToString();
+        _email = obj["email"].ToString();
+        _accessToken = obj["access_token"].ToString();
+        _reset_password_token = obj["reset_password_token"].ToString();
+    }
+
+    public void WebResponseProfileUpdate(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        _first_name = obj["first_name"].ToString();
+        _last_name = obj["last_name"].ToString();
+        _reset_password_token = obj["reset_password_token"].ToString();
+        isCredentialsUpdated = true;
+    }
+
+    public void WebResponsePasswordEdit(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        isPasswordUpdated = false;
+        // TODO: Go to the screen with passwords
+    }
+
+    public void WebResponsePasswordUpdate(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        _accessToken = obj["data"][2][0].ToString();
+        isPasswordUpdated = true;
+    }
+
+    public void WebResponseProfileValidates(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        _accessToken = obj["data"][1].ToString();
+    }
+
+    public void WebResponseProfileAuthProviders(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        _accessToken = obj["data"][2][0].ToString();
+        PlayerPrefs.SetString(Constants.AccessToken, _accessToken);
+
+        if (OnServerAuthResponce != null)
+            OnServerAuthResponce();
+        // TODO: after login FB
+    }
+
+    public void WebResponseProfileGetInfo(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        //TODO: parse
+    }
+
+    public void WebResponseSessionHistory(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        // Check
+    }
+
+    public void WebResponseSessionCreate(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        var id = obj["id"].ToString();
+        // Responce when session was complete written
+    }
+
+    public void WebResponseSessionHistoryAll(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        int session_count = obj["data"].Count;
+        PlayerPrefs.SetInt(Constants.CurrentSessionIndexName, session_count);
+        for (int i = 0; i < session_count; i++)
+        {
+          _attributes at = new _attributes(
+              (int)obj["data"][i]["attributes"][0],
+              (int)obj["data"][i]["attributes"][1],
+              obj["data"][i]["attributes"][2].ToString(),
+              (int)obj["data"][i]["attributes"][3],
+              (int)obj["data"][i]["attributes"][4]
+              );
+
+            var id = obj["data"][i]["id"].ToString();
+
+          Session session = new Session(id, at);
+          sessionHistoryList.Add(session);
+        }
+        //SessionManager.Instance.SetUserHistorySessions();
+    }
+
+    public void WebResponseSessionUpdate(string responseString)
+    {
+        // Session update
+        var obj = JsonMapper.ToObject(responseString);
+
+        _attributes at = new _attributes(
+            (int)obj["data"]["attributes"][0],
+            (int)obj["data"]["attributes"][1],
+            obj["data"]["attributes"][2].ToString(),
+            (int)obj["data"]["attributes"][3],
+            (int)obj["data"]["attributes"][4]
+        );
+
+        var id = obj["data"]["id"].ToString();
+        Session session = new Session(id, at);
+
+        var session_to_update = sessionHistoryList.Find(c=> c.id == session.id);
+
+        if (session_to_update != null)
+        {
+            session_to_update.id = session.id;
+            session_to_update.attributes.session_id = session.attributes.session_id;
+            session_to_update.attributes.pain_level = session.attributes.pain_level;
+            session_to_update.attributes.pain_cause_id = session.attributes.pain_cause_id;
+            session_to_update.attributes.created_at = session.attributes.created_at;
+            session_to_update.attributes.media_duration_sec = session.attributes.media_duration_sec;
+        }
+    }
+
+    public void WebResponseUserPainCauseCreate(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        PainCause pc = new PainCause(
+            (int)obj["data"]["id"],
+            obj["data"]["attributes"]["name"].ToString(),
+            (int)obj["data"]["attributes"]["pain-cause-id"],
+            (int)obj["data"]["attributes"]["pain-level"]
+            );
+
+        var upcomming_pc = painCauseList.Find(c=> c.id == pc.id);
+
+        if (upcomming_pc == null)
+        {
+            painCauseList.Add(pc);
+        }
+    }
+
+    public void WebResponsePainCauseAll(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        int session_count = obj["data"].Count;
+
+        for (int i = 0; i < session_count; i++)
+        {
+            PainCause pc = new PainCause(
+                (int)obj["data"][i]["id"],
+                obj["data"][i]["attributes"]["name"].ToString(),
+                (int)obj["data"][i]["attributes"]["pain-cause-id"],
+                (int)obj["data"][i]["attributes"]["pain-level"]
+                );
+
+            var upcomming_pc = painCauseList.Find(c => c.id == pc.id);
+
+            if (upcomming_pc == null)
+            {
+                painCauseList.Add(pc);
+            }
+        }
+    }
+
+    public void WebResponsePainCauseUpdate(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        PainCause pc = new PainCause(
+            (int)obj["data"]["id"],
+            obj["data"]["attributes"]["name"].ToString(),
+            (int)obj["data"]["attributes"]["pain-cause-id"],
+            (int)obj["data"]["attributes"]["pain-level"]
+            );
+
+        var upcomming_pc = painCauseList.Find(c => c.id == pc.id);
+
+        if (upcomming_pc != null)
+        {
+            upcomming_pc.id = pc.id;
+            upcomming_pc.name = pc.name;
+            upcomming_pc.pain_cause_id = pc.pain_cause_id;
+            upcomming_pc.pain_level = pc.pain_level;
+        }
+    }
+
+    public void WebResponsePainCauseDelete(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        // Delete pain cause, need to delete locally
+    }
+
+    public void WebResponseSessionsIndex(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        // TODO: parse 
+    }
+
+    public void WebResponseSessionsPainCauseShow(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+
+        PainCauseHistory pch = new PainCauseHistory(
+            (int)obj["data"]["id"],
+            obj["data"]["attributes"]["name"].ToString(),
+            obj["data"]["attributes"]["session-text"].ToString(),
+            (int)obj["data"]["position"],
+            obj["data"]["media-duration-sec"].ToString(),
+            (int)obj["data"]["pain-cause-id"]
+            );
+
+        painCauseHistories.Add(pch);
+    }
+
+    public void WebResponseGetQuizesBySession(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        int session_count = obj["data"].Count;
+
+        for (int i = 0; i < session_count; i++)
+        {
+            Quize qz = new Quize(
+                (int)obj["data"][i]["id"],
+                obj["data"][i]["question-text"].ToString(),
+                obj["data"][i]["answer-text"].ToString(),
+                (bool)obj["data"][i]["answer-bool"],
+                (int)obj["data"][i]["position"]
+                );
+
+            var upcomming_qz = quizeList.Find(c => c.id == qz.id);
+
+            if (upcomming_qz == null)
+            {
+                quizeList.Add(qz);
+            }
+        }
+    }
+
+    public void WebResponseGetQuizeById(string responseString)
+    {
+        var obj = JsonMapper.ToObject(responseString);
+        // TODO: nned to parse
+    }
+
+    #endregion
+
+
+    #region SIGNS
+
+    public void WebRequestSignIn(string email, string password)
+    {
+        var attributes = new Attributes(email, password, "", "", "");
+        var _data = new Data("users", attributes);
+        var json_data = new JsonBody(_data);
+        var _requestJsonData = JsonMapper.ToJson(json_data);
+        var request = WebRequest(BASE_URL + SIGN_IN, "POST", "", false);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 1));
+    }
+
+    public void WebRequestSignOut()
+    {
+        var request = WebRequest(BASE_URL + SIGN_IN, "DELETE", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 2));
+    }
+
+    #endregion
+
+    #region PROFILE
+
+    public void WebRequestProfileSingUp(string password_confirmation)
+    {
+        var attributes = new Attributes(_email, _password, _first_name, _last_name, password_confirmation);
+        var _data = new Data("users", attributes);
+        var json_data = new JsonBody(_data);
+        var _requestJsonData = JsonMapper.ToJson(json_data);
+        var request = WebRequest(BASE_URL + REGISTRATION, "POST", "", false);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 3));
+    }
+
+    public void WebRequestProfileShow()
+    {
+        var request = WebRequest(BASE_URL + REGISTRATION, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 4));
+    }
+
+    public void WebRequestProfileUpdate()
+    {
+        var attributes = new Attributes(_email, _password, _first_name, _last_name, "password");
+        var _data = new Data("profiles", attributes);
+        var json_data = new JsonBody(_data);
+        var _requestJsonData = JsonMapper.ToJson(json_data);
+        var request = WebRequest(BASE_URL + REGISTRATION, "GET", _accessToken, true);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 5));
+    }
+
+    #endregion
+
+    #region PASSWORD
+
+    public void WebRequestPasswordEdit(string _email)
+    {
+        var request = WebRequest(BASE_URL + RESET_PASSWORD + _email, "GET", "", false);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 6));
+    }
+
+    public void WebRequestPasswordUpdate(string _reset_password_token)
+    {
+        var request = WebRequest(BASE_URL + UPDATE_PASSWORD + _reset_password_token, "PATCH", "", false);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 7));
+    }
+
+    #endregion
+
+    #region VALIDATES
+
+    public void WebRequestProfileValidates(string _comfirmation_token)
+    {
+        var request = WebRequest(BASE_URL + PROFILE_VALIDATION + _comfirmation_token, "GET", "", false);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 8));
+    }
+
+    #endregion
+
+    #region AUTH PROVIDERS
+
+    public void WebRequestProfileAuthProviders()
+    {
+        var provInfo = new ProviderInfo(_provider_name, _provider_token);
+        var auth = new Auth(_first_name, _last_name, _login, provInfo);
+        var _requestJsonData = JsonMapper.ToJson(auth);
+        var request = WebRequest(BASE_URL + PROFILE_AUTH, "POST", _accessToken, true);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 9));
+    }
+
+    public void WebRequestProfileGetInfo()
+    {
+        var request = WebRequest(BASE_URL + PROFILE_AUTH, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 10));
+    }
+
+    #endregion
+
+    #region SESSION HISTORY
+
+    public void WebRequestSessionHistory(string sessionId, string pain_cause_id)
+    {
+        var request = WebRequest(BASE_URL + SESSION_HISTORY_SESSION + sessionId + SESSION_HISTORY_PAIN_CAUSE + pain_cause_id + SESSION_HISTORY_IS_CHART, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 11));
+    }
+
+    public void WebRequestSessionCreate()
+    {
+        var session = new SessionHistory(_pain_level, _session_id);
+        var _requestJsonData = JsonMapper.ToJson(session);
+        var request = WebRequest(BASE_URL + SESSION_HISTORY, "POST", _accessToken, true);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 12));
+    }
+
+    public void WebRequestSessionHistoryAll()
+    {
+        var request = WebRequest(BASE_URL + SESSION_HISTORY, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 22));
+    }
+
+    public void WebRequestSessionUpdate(string sessionId)
+    {
+        var request = WebRequest(BASE_URL + SESSION_HISTORY + "/" + sessionId, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 13));
+    }
+
+    #endregion
+
+    #region USER PAIN CAUSES
+
+    public void WebRequestUserPainCauseCreate()
+    {
+        var pain = new Pain(_pain_cause_id, _pain_level);
+        var _requestJsonData = JsonMapper.ToJson(pain);
+        var request = WebRequest(BASE_URL + PAIN_CAUSES, "POST", _accessToken, true);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 14));
+    }
+
+    public void WebRequestPainCauseUpdate(int painId)
+    {
+        var pain = new Pain(_pain_cause_id, _pain_level);
+        var _requestJsonData = JsonMapper.ToJson(pain);
+        var request = WebRequest(BASE_URL + PAIN_CAUSES + "/" + painId, "PUT", _accessToken, true);
+
+        StartCoroutine(ProcessWebRequest(_requestJsonData, request, 15));
+    }
+
+    public void WebRequestPainCauseShow()
+    {
+        var request = WebRequest(BASE_URL + PAIN_CAUSES, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 16));
+    }
+
+    public void WebRequestPainCauseDelete(int painId)
+    {
+        var request = WebRequest(BASE_URL + PAIN_CAUSES + "/" + painId, "DELETE", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 17));
+    }
+
+    public void WebRequestPainCauseAll()
+    {
+        var request = WebRequest(BASE_URL + PAIN_CAUSES, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 23));
+    }
+
+    #endregion
+
+    #region SESSIONS
+
+    public void WebRequestSessionsIndex(int painId)
+    {
+        var request = WebRequest(BASE_URL + PAIN_CAUSES + "/" + painId + "/" + PAIN_CAUSES_SESSION, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 18));
+    }
+
+    public void WebRequestSessionsPainCauseShow(int painId, int sessionId)
+    {
+        var url = BASE_URL + PAIN_CAUSES + "/" + painId + "/" + PAIN_CAUSES_SESSION_SHOW + "/" + sessionId;
+        var request = WebRequest(url, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 19));
+    }
+
+    #endregion
+
+    #region QUIZES
+
+    public void WebRequestGetQuizesBySession(int painId, int sessionId)
+    {
+        var url = BASE_URL + PAIN_CAUSES + "/" + painId + "/" + PAIN_CAUSES_SESSION_SHOW + "/" + sessionId + "/" + PAIN_CAUSES_SESSION_QUIZES;
+        var request = WebRequest(url, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 20));
+    }
+
+    public void WebRequestGetQuizeById(int painId, int sessionId, int quizeId)
+    {
+        var url = BASE_URL + PAIN_CAUSES + "/" + painId + "/" + PAIN_CAUSES_SESSION_SHOW + "/" + sessionId + "/" + PAIN_CAUSES_SESSION_QUIZES + "/" + quizeId;
+        var request = WebRequest(url, "GET", _accessToken, true);
+        StartCoroutine(ProcessWebRequest(requestJsonData.ToString(), request, 21));
+    }
+
+    #endregion
+
+}
+
+
+#region Session History
+
+[Serializable]
+public class Session
+{
+    public string id;
+    public _attributes attributes;
+
+    public Session(string id, _attributes attributes)
+    {
+        this.id = id;
+        this.attributes = attributes;
+    }
+}
+
+[Serializable]
+public class _attributes
+{
+    public int session_id;
+    public int pain_level;
+    public string created_at = "2018-02-05T14:20:53.941Z";
+    public int pain_cause_id;
+    public int media_duration_sec = 1003;
+
+    public _attributes(int session_id, int pain_level, string created_at, int pain_cause_id, int media_duration_sec)
+    {
+        this.session_id = session_id;
+        this.pain_level = pain_level;
+        this.created_at = created_at;
+        this.pain_cause_id = pain_cause_id;
+        this.media_duration_sec = media_duration_sec;
+    }
+}
+
+#endregion
+
+#region Pain Cause
+
+[Serializable]
+public class PainCause
+{
+    public int id;
+    public string name;
+    public int pain_cause_id;
+    public int pain_level;
+
+    public PainCause(int id, string name, int pain_cause_id, int pain_level)
+    {
+        this.id = id;
+        this.name = name;
+        this.pain_cause_id = pain_cause_id;
+        this.pain_level = pain_level;
+    }
+}
+
+[Serializable]
+public class PainCauseHistory
+{
+    public int id;
+    public string name;
+    public string session_text;
+    public int position;
+    public string media_duration_sec;
+    public int pain_cause_id;
+
+    public PainCauseHistory(int id, string name, string session_text, int position, string media_duration_sec, int pain_cause_id)
+    {
+        this.id = id;
+        this.name = name;
+        this.session_text = session_text;
+        this.position = position;
+        this.media_duration_sec = media_duration_sec;
+        this.pain_cause_id = pain_cause_id;
+    }
+}
+
+#endregion
+
+#region Quizes
+
+[Serializable]
+public class Quize
+{
+    public int id;
+    public string question_text;
+    public string answer_text;
+    public bool answer_bool;
+    public int position;
+
+    public Quize(int id, string question_text, string answer_text, bool answer_bool, int position)
+    {
+        this.id = id;
+        this.question_text = question_text;
+        this.answer_text = answer_text;
+        this.answer_bool = answer_bool;
+        this.position = position;
+    }
+}
+
+#endregion
+
+[Serializable]
+public class Pain
+{
+    public int pain_cause_id;
+    public int pain_level;
+
+    public Pain(int pain_cause_id, int pain_level)
+    {
+        this.pain_cause_id = pain_cause_id;
+        this.pain_level = pain_level;
+    }
+}
+
+[Serializable]
+public class SessionHistory
+{
+    public int pain_level;
+    public int session_id;
+
+    public SessionHistory(int pain_level, int session_id)
+    {
+        this.pain_level = pain_level;
+        this.session_id = session_id;
+    }
+}
+
+[Serializable]
+public class Auth
+{
+    public string first_name;
+    public string last_name;
+    public string login;
+
+    public ProviderInfo provider_info;
+
+    public Auth(string first_name, string last_name, string login, ProviderInfo provider_info)
+    {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.login = login;
+        this.provider_info = provider_info;
+    }
+}
+
+[Serializable]
+public class ProviderInfo
+{
+    public string provider_name;
+    public string provider_token;
+
+    public ProviderInfo(string provider_name, string provider_token)
+    {
+        this.provider_name = provider_name;
+        this.provider_token = provider_token;
+    }
+}
+
+[Serializable]
+public class JsonBody
+{
+    public Data data;
+
+    public JsonBody(Data data)
+    {
+        this.data = data;
+    }
+}
+
+[Serializable]
+public class Data
+{
+    public string type;
+    public Attributes attributes;
+
+    public Data(string type, Attributes at)
+    {
+        this.type = type;
+        this.attributes = at;
+    }
+}
+
+[Serializable]
+public class Attributes
+{
+    public string email;
+    public string password;
+
+    public string first_name;
+    public string last_name;
+    public string password_confirmation;
+
+    public Attributes(string email, string password, string first_name, string last_name, string password_confirmation)
+    {
+        this.email = email;
+        this.password = password;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.password_confirmation = password_confirmation;
+    }
+
+}

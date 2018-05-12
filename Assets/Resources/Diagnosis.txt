@@ -1,0 +1,38 @@
+{
+"list":[
+    {
+        "diagnosis":"Arteriosclerosis",
+        "posx":0.03623722,
+        "posy":0.6658579,
+        "posz":1.42384,
+        "rotx":61.24,
+        "roty":-178.561,
+        "rotz":0,
+        "fov":55,
+        "targetBone":"head"
+    },
+    {
+        "diagnosis":"Back Pain",
+        "posx":0.1321909,
+        "posy":-1.487445,
+        "posz":2.939795,
+        "rotx":9.141001,
+        "roty":-177.442,
+        "rotz":0,
+        "fov":55,
+        "targetBone":"chestLower"
+    },
+    {
+        "diagnosis":"Myofascial Pain Syndrome",
+        "posx":-0.661265,
+        "posy":-4.828566,
+        "posz":0.4780168,
+        "rotx":-74.005,
+        "roty":126.878,
+        "rotz":0,
+        "fov":55,
+        "targetBone":"pelvis"
+    }
+],
+"success":true
+}

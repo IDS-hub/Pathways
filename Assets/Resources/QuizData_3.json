@@ -1,0 +1,42 @@
+[
+  {
+    "Question": "If you have chronic pain, you should get lots of rest. Exercise will only worsen your pain.",
+    "CorrectAnswer": false,
+    "Annotation": "Many people think that exercise will aggravate chronic pain, but that really couldn’t be farther from the truth. When you incorporate exercise into your treatment plan, you strengthen your muscles, release stress, improve circulation and much more. You also reassure the brain that movement isn’t damaging you. You may even need to literally tell your body while working out: “this is not doing me any damage!” It’s important to gradually start increasing exercise and feared movements."
+  },
+  {
+    "Question": "Migraines are the most common cause for days lost from work in industrialised countries.",
+    "CorrectAnswer": false,
+    "Annotation": "Back pain is the most common cause. More than half of the population in industrialised societies (such as the UK) experience back pain during their life. In one study in the USA, it was found that 25% of the population suffered some acute, recurrent or chronic back pain over the course of a single year."
+  },
+  {
+    "Question": "Nerve endings, together with the brain, cause us to feel pain.",
+    "CorrectAnswer": true,
+    "Annotation": "This pain is actually referred to as phantom pain. The amputation site contains nerve endings that continue to send pain signals to the brain, even though the limb is no longer there. This type of pain is most common soon after surgery, and tends to lessen within 6 months, though some people still experience phantom pain for years. This highlights an important concept that we reiterate through many of our sessions - pain does not equal physical damage."
+  },
+  {
+    "Question": "The brain cannot feel pain.",
+    "CorrectAnswer": true,
+    "Annotation": "The brain is the organ that helps us detect pain in parts of our body, but the brain itself does not have the nerve endings that are required to feel pain."
+  },
+  {
+    "Question": "It's possible for people to experience a significant health event such as a heart attack and not experience any pain.",
+    "CorrectAnswer": true,
+    "Annotation": "This is one of the main reasons heart attacks go unrecognised: without pain, people are unlikely to report the event and remain untreated, leading to an increased risk of further heart problems. It's also worth noting that this is more common in women than men and highlights the fact that our pain system is not perfect."
+  },
+  {
+    "Question": "The majority of people with pain are treated by doctors who specialize in pain management.",
+    "CorrectAnswer": false,
+    "Annotation": "Just 15% of chronic pain patients seek help from a pain specialist; 63% see a general practitioner and 25% seek a chiropractor's help. According to the 2013 American Medical Association (AMA) Physician Master File, there are only 4,014 active pain management specialists practicing in the US today compared with 108,917 active general practice doctors."
+  },
+  {
+    "Question": "The pain system only becomes oversensitized after an injury.",
+    "CorrectAnswer": false,
+    "Annotation": "There are many reasons why your brain may feel the need to create pain. One of the reasons is indeed after an injury has healed, but the pain system remains sensitised. The most common cause of this is overtreatment, anxiety and concern about the affected area. Repressed or conscious stress and anxiety alone can cause physical pain without an injury being present. This pain may go to a convenient place where your body has sent pain before - and that can be where you previously had an injury. It could be a completely new area, or even migrate from place to place. Pain can also be created by the brain simply as a result of the expectation of pain. Once a pain habit is created by any of these reasons, it’s important that we take steps to break the habit and address the underlying cause."
+  },
+  {
+    "Question": "Fear of pain will feed chronic pain.",
+    "CorrectAnswer": true,
+    "Annotation": "If you’re scared of pain returning or feel fear and anxiety when you are in pain, it will reinforce the pain habit by activating stress hormones. Fear also reinforces the message to your brain that there is indeed danger. And what does your brain do when it senses danger? It causes pain. The mind can interpret harmless signals and sensations such as typing as dangerous. The same goes for other triggers such as sitting on a chair for too long, exposure to bright lights or lifting something heavy. It can also be dangerous emotions such as pressure or stress - in which case, this needs to be addressed. Understand that there’s nothing mechanically wrong with you. It’s just a neural pathway issue. Embrace the pain, don’t fear it. You know the pain is there for no reason and it’s not doing you any damage. Use the pain as an opportunity to practice one of our exercises that will make you feel better than even before the pain."
+  }
+]
