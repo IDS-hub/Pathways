@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+body {
+	font-family:"Roboto", Arial, Helvetica, sans-serif;
+	background:#f3f5f9;
+	font-size: 13px;
+	color:#909090;
+}
+a{
+	color:#1ca0eb;
+	outline:none;
+}
+a:hover{
+	color:#1c9feb;
+	text-decoration:none;
+}
+input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+	outline: none;
+	outline: none;
+	outline-offset: 0;
+}
+.form-control:focus {
+	border-color: none;
+	outline: 0;
+	-webkit-box-shadow:none;
+	box-shadow: none
+}
+.loginWrapper{
+	background:#1c9feb;
+	padding:0;
+	margin:0;
+}
+.loginDiv{
+	width:460px;
+	padding:113px 70px 0 70px;
+	margin:120px auto 0;
+	background:#f8f8f8;
+	position:relative;
+}
+.logoHolder{
+	width:167px;
+	height:167px;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	position:absolute;
+	top:-80px;
+	left:50%;
+	margin-left:-83px;
+	box-shadow: 0px 5px 5px #dedede;
+	background:#fff;
+}
+.logoHolder img{
+	width:100%;
+	height:100%;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	padding:6px;
+}
+.loginDiv h1{
+	font:normal 22px/34px Roboto, Arial, Helvetica, sans-serif;
+	color:#2f94d7;
+	margin:0;
+	padding:0 0 20px 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+.paddingNone{
+	padding:0;
+}
+.marginNone{
+	margin:0;
+}
+.panelDiv{
+	background:none;
+}
+.panelInput{
+	background:#fff;
+	padding:5px;
+}
+.form-control{
+	height:44px;
+}
+.txtfield, .txtfield2{
+	border-radius:0;
+	border:0;
+	box-shadow:none;
+	position:relative;
+	padding:0 0 0 45px;
+}
+.txtfield2{
+	border-top:1px solid #e3e3e3;
+}
+.txtfield2:focus{
+	border-top:1px solid #e3e3e3;;
+}
+.icon_user{
+    height:15px;
+    width:15px;
+    position: absolute;
+	top:17px;
+	left:15px;
+	z-index:4;
+}
+.icon_passwrd{
+    height:15px;
+    width:15px;
+    position: absolute;
+	top:62px;
+	left:16px;
+	z-index:4;
+}
+.loginBtn, .backBtn{
+	background:#fa9d22;
+	border-radius:0;
+	border:0;
+	height:44px;
+	font-size:18px;
+	margin:0 0 10px 0;
+}
+.loginBtn:hover{
+		background:#fcc803;
+}
+.backBtn{
+	background:#333;
+	}
+.backBtn:hover{
+	background:#1c9feb;
+}
+.panel{
+	box-shadow:none;
+}
+.registerDiv{
+	width:460px;
+	background:#424242;
+	padding:20px 0;
+	text-align:center;
+	margin:0 auto;
+}
+.loginFooter{
+	width:460px;
+	margin:30px auto 0;
+	text-align:center;
+	color:#fff;
+}
+/*=========================== inner page ==========================*/
+.headerTop{
+	height:60px;
+	background:#1ca0eb;
+}
+.adminDiv{
+	margin-right:10px!important;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+	background-color:transparent;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a.active {
+	background-color: transparent;
+	color:#fff;
+}
+.profileImg{
+	width:38px;
+	height:38px;
+	background:#f3f5f9;
+	text-align:center;
+	border-radius:50%;
+	border:2px solid #fff;
+	display:inline-block;
+}
+.navbar-nav > li > a{
+	padding:11px 0 0 0;
+	line-height:30px;
+}
+.dropdwn{
+	border-radius:4px!important;
+}
+.font_icon{
+	margin:2px 10px 0  0!important;
+}

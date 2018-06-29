@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width: 480px){
+	.loginDiv{
+		width:auto;
+		padding:113px 20px 0 20px;
+		margin:120px 1em 0;
+	}
+	.registerDiv{
+		width:auto;
+		margin:0 1em;
+	}
+	.loginFooter{
+		width:auto;
+		margin:30px auto;
+	}
+}

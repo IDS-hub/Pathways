@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+
+    SetEnv HTTP_MOD_REWRITE On
+# For security reasons, Option followsymlinks cannot be overridden.
+#    Options +FollowSymLinks
+    Options +SymLinksIfOwnerMatch
+    RewriteEngine On
+	RewriteBase /Pathways/
+    
+# File modified on Sun Nov 17 22:05:39 2013 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+#     php_flag display_errors on
+	
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>

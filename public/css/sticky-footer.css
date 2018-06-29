@@ -1,0 +1,80 @@
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -170px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 170px; /* .push must be the same height as .footer */
+}
+/*-- footer css --*/
+.footer{
+	background: #E2ECF6;
+	color:  #fff;
+	padding: 20px 0 10px 0;
+	color: #4d4d4d;
+	font: normal 13px/21px 'Roboto', Arial, Helvetica, sans-serif;
+	
+}
+.footer a{
+	color:#256db7;
+}
+.footLogo{
+	text-align:left;
+	margin:0 0 15px 0;
+}
+ul.footLink, ul.address{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+ul.footLink li{
+	display:inline-block;
+}
+ul.footLink li a{
+	color:#256db7;
+}
+ul.footLink li a:hover, .footer a:hover{
+	color:#4d4d4d;
+}
+ul.address li{
+	display:block;
+	margin:0 10px 10px 0;
+}
+ul.address li span{
+	float:left;
+	margin:0 10px 0 0;
+}
+.footer_txt1{
+	color: #97a9b6;
+	text-transform: uppercase;
+	font: normal 16px/29px 'Roboto', Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+.footer_txt2{
+	padding: 0px;
+	margin: 0px;
+	font: normal 13px/29px 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 767px) {
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -320px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 320px; /* .push must be the same height as .footer */
+}
+
+
+
+}
